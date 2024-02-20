@@ -17,26 +17,32 @@
     </style>
 </head>
 <body>
-    <div id= 'area' onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" onmousedown="cliqued()" onmouseup="cliqueu()">
+    <div id='area'>
         Clique...
     </div>
 
     <script>
-        var area = window.document.getElementById('area')       
+        var area = window.document.getElementById('area');
+        area.addEventListener('click', clicar);
+        area.addEventListener('mouseenter', entrar);    
+        area.addEventListener('mouseout', sair);
+        area.addEventListener('mousedown', cliqued);
+        area.addEventListener('mouseup', cliqueu);
+
         function clicar() {    
-            area.innerText = 'Clicou!'
+            area.innerText = 'Clicou!';
         }
         function entrar() {
-            area.innerText = 'Entrou'
+            area.innerText = 'Entrou';
         }
         function sair() {
-            area.innerText = 'Saiu!' 
+            area.innerText = 'Saiu!'; 
         }
         function cliqued(){
-            area.style.background = 'Blue' 
+            area.style.background = 'blue'; 
         }
         function cliqueu(){
-            area.style.background = 'Black' 
+            area.style.background = 'black'; 
         }
     </script>
 </body>
