@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 009</title>
+    <style>
+        div{
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            width: 125px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Você é...
+    </h1>
+
+    Você nasceu em qual país:  <input type="text" id="pais">
+    
+    <button onclick="conf()">Confirmar</button>
+    
+    <div id="resposta"></div>
+    
+    <script>
+        var paisn = document.getElementById('pais');
+        var divr = document.getElementById('resposta');
+
+        function conf(){
+            var paisc = paisn.value.toLowerCase();
+            if (paisc === 'brasil') {
+                //alert('Você é Brasileiro!');
+                divr.innerHTML = 'Você é Brasileiro!'
+            } else {
+                //alert('Você é estrangeiro!');
+                divr.innerHTML = 'Você é estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>
