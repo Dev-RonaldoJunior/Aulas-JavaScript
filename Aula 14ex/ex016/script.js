@@ -8,6 +8,17 @@ function contar() {
         res.innerText = 'Passo inválido! Digite um valor maior que zero para o passo.'
         return
     }
+
+    if (ini == ''){
+        res.innerText = 'Inicio inválido! Digite um valor para o inicio.'
+        return
+    }
+
+    if (fim == ''){
+        res.innerText = 'Fim inválido! Digite um valor para o Fim.'
+        return
+    }
+
     if (ini < fim) {
         for (var c = ini; c <= fim; c += pas) {
             res.innerText += '\u{1F449}'
