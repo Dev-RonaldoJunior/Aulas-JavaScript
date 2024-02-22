@@ -5,17 +5,17 @@ function contar() {
     var res = document.getElementById('res')
     res.innerText = ''
     if (pas <= 0) {
-        res.innerText = 'Passo inválido! Digite um valor maior que zero para o passo.'
+        res.innerText = 'Passo inválido! Digite um numero valido ou maior que zero para o passo.'
         return
     }
 
     if (ini == ''){
-        res.innerText = 'Inicio inválido! Digite um valor para o inicio.'
+        res.innerText = 'Inicio inválido! Digite um numero valido para o inicio.'
         return
     }
 
     if (fim == ''){
-        res.innerText = 'Fim inválido! Digite um valor para o Fim.'
+        res.innerText = 'Fim inválido! Digite um numero valido para o Fim.'
         return
     }
 
